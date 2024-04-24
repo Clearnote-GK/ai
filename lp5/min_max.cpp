@@ -59,12 +59,15 @@ void avg(int *arr, int n)
 int main()
 {
     int n, i;
-    n = 6; // change the number of elements directly
-    int arr[n]; 
+    cout << "Enter the number of elements: ";
+    cin >> n;
+
+    int arr[n];
     srand(time(0));
     for (int i = 0; i < n; ++i)
     {
-        arr[i] = rand() % 100;
+        cout << "Enter element " << i + 1 << ": ";
+        cin >> arr[i];
     }
 
     cout << "\nArray elements are: ";
